@@ -1,0 +1,252 @@
+/*the first style element is the universal * selector 'selects all" '*/
+* {
+  color: #000;
+}
+/*color #000 changed all the letter on page that was previously blue
+to black*/
+body {
+  background: none repeat scroll 0 0 #fff;
+color: #222222;
+margin:0;
+/*moved everything on the screen to the left, touching the screen edge*/
+}
+/*selects anchor tags*/
+a {
+  color: #222222;
+  /*removed underline from words*/
+  text-decoration: none;
+}
+/*select anchor tags that hover*/
+a:hover {
+  /*change color on hover*/
+  color: #222222;
+  /*when user moves cursor over words and underline will appear*/
+  text-decoration: underline;
+}
+/*selects all anchor tags with a button class to hover*/
+a.button:hover {
+  /*r5emoves underline from button that hover*/
+  text-decoration: none;
+}
+/*top section- navigation class*/
+/*select elements wit6h top-navigation class*/
+.top-navigation {
+  /*images, yashaworld, mail, buttons, share, bunny picture all moved towards the right*/
+  float: right;
+  /*set right side margain to 25px*/
+  margin-right: 25px;
+}
+/*selects elements in the top-navigation class aand any list tags in the top-navigation class*/
+.top-navigation li{
+  list-style: none;
+  /*moved list to appear in a block*/
+  display: inline-block;
+  /*moved text towards the right*/
+  text-align: right;
+  /*set padding around box to: top-5px, left-10px, bottom-0, right-0, and added spacing to the list words*/
+  padding: 5px 10px 0 0;
+  vertical-align: bottom;
+  margin: 5px 5px 0 0;
+  /*changed font size to 13px which is smaller than default size*/
+  font-size: 13px;
+}
+/*selects the font awesome standard class to change text of icons*/
+.fa {
+  font-size: 20px;
+  vertical-align: top;
+  opacity: 0.7;
+  cursor: default;
+}
+/*selects font awesome icons on hover*/
+.fa:hover {
+  opacity: 1.0;
+}
+/*selects all elements with share-button class*/
+.share-button {
+  /*adds a grey background around the share button*/
+  background-color: #f2f2f2;
+  padding:7px 15px;
+  cursor: default;
+  position: relative;
+  top: -3px;
+}
+/*selects elements with a share-button class that hover*/
+.share-button:hover {
+  /*i did not notice any color change*/
+  background-color: #E1E1E1
+}
+/*select any element with profile-img class*/
+.profile-img {
+  border-radius: 25px;
+  height: 32px;
+  width: 32px;
+  position: relative;
+  /*moved the top list up and became much smaller*/
+  top: 9px;
+}
+
+/*mid section- search box*/
+/*selects elements with search-box class*/
+.search-box {
+  /*made the goodle img larger, made it cover up the top list, and
+  buttons*/
+  position: absolute;
+  /*changed the margin of the top area of the "mid section" to 75px,
+  in order to brng the img down a bit*/
+  margin-top: 45px;
+  width: 100%
+}
+/* select elements with search-box class and any imag tags*/
+.search-box img {
+  /*change padding around the img, top-142px, left- 0, bottom-24px, right -0
+  and created extra space arond img*/
+  padding:70px 0 30px 0;
+  display: block;
+  margin:0 auto;
+}
+
+/* selects elements with search-box cas and any input tags*/
+.search-box input {
+  /*changed the search box under the img, gave it a width of 600px*/
+  width: 500px;
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid #d9d9d9;
+  /*changed font size in search box to 16px, which was slighlty larger
+  than the default of 12px*/
+  font-size: 16px;
+  /*with a smaller border radus and block display , centered the search
+  box*/
+  border-radius: 5px;
+  display: block;
+}
+/*select elements with search-box class, find input tags, and then focus*/
+.search-box input:focus {
+  border-color: #f5f5f5;
+}
+/*select elements with the class of search-button*/
+.search-buttons {
+  /*moves search buttons to center under the search box*/
+  text-align: center;
+  padding-left: 0;
+}
+/*select elements with search-buttons class and with button tag*/
+.search-buttons button{
+  /*created a shadow with a dark gray color around the search-buttons*/
+  background-color: #f5f5f5;
+  /*the border removed the shadow, making it one solid color*/
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  /*gave a navy blue color to border of search-buttons*/
+  color: #666666;
+  font-size: 14px;
+  /*change font to bold*/
+  font-weight: bold;
+  line-height: 27px;
+  /*added space between the search box and the search-buttons*/
+  margin: 17px 6px;
+  padding: 0 12px;
+  display: inline-block;
+  /*changed cursor to a pointing right hand when the user places cursor over the search-buttons*/
+  cursor: pointer;
+}
+/*selects elements with search-buttons class/finds buttons with button tag/ then finds tags that hover*/
+.search-button button:hover {
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  box-shadow:0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #333333;
+}
+
+
+
+/*bottom section styling- site links*/
+/*selects elements with button-site-links class*/
+.bottom-site-links {
+  /*added some space to the bottom of the page after the search-buttons*/
+  bottom: 0 !important;
+  /*what does the absolute positioning do, because it did not see any change*/
+  position: fixed;
+  /*will take the width of the screen*/
+
+  width: 100%;
+  /*nothing changed i was especting to see a grey box at the bottom of the screen*/
+/*fixed sidenote MAKE SURE EVERYTHING IS SPELLED CORRECTLY*/
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+
+/*select any elements with a class of left-site-links*/
+.left-site-links,
+/*and selects elements of right-site-links all at once*/
+.right-site-links {
+  margin: 0;
+}
+/*select elemnts with left-site-links class*/
+.left-site-links {
+  /*floated the links together on the left side*/
+  float: left;
+  padding-left: 20px;
+}
+/*select elements with right-site-links class*/
+.right-site-links {
+  float: right;
+  padding-right: 10px;
+}
+/*select elements with left-site-links class and finds list(li) tags*/
+.left-site-links li,
+/*also select right-site-links, and li tags*/
+.right-site-links li{
+  /*removed styling from the list*/
+  list-style: none;
+  /*displayed the list in a line*/
+  display: inline;
+  line-height: 40px;
+}
+/*select right-site-links class, finds li tags and with first anchor tags
+[does first child mean the first anchor?]*/
+.right-site-links li a:first-child {
+  padding-right: 8px;
+}
+/*select any elements with a class of left-site-links and fins all list tags inside the 2nd anchor*/
+.left-site-links li:nth-child(2),
+/*and select tags inside the 3rd anchor*/
+.left-site-links li:nth-child(3) {
+  margin-left: 7px;
+}
+/*select elements with a class of left-site-links and finds the list tags, and then the anchor tags*/
+.left-site-links li a,
+/*selects right-site-links list tags and anchor tags*/
+.right-site-links li a {
+  color: #666666;
+  /*change margin around top, right, and bottom*/
+  margin: 2px 10px 0;
+  letter-spacing: 0.1px;
+  font-size: 14px;
+}
+@media (max-width: 540px) {
+.bottom-site-links{
+  display: none;
+  }
+  
+
+}
+
+/*makes the page media responsive*/
+@media only screen and (max-width: 490px) {
+  
+  .profile-img {
+    display:none;
+  }
+
+}
+@media only screen and (max-width: 640px) {
+  .search-box img {
+  width:100%;
+  }
+  input {
+    width:80px;
+    padding: 0;
+  }
+
+}
